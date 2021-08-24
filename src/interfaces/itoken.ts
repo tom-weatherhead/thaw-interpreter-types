@@ -8,4 +8,7 @@ export interface IToken {
 	readonly line: number;
 	readonly column: number;
 	readonly isQuoted: boolean;
+
+	// cloneWithNewLineNumber(line: number): IToken;
+	getValueAsNumber(): number;
 }

@@ -19,8 +19,10 @@ export interface IGrammar {
 	startSymbol: GrammarSymbol;
 	productions: IProduction[];
 
-	languageName: string; // This is a 'get' accessor.
+	// 'Get' accessor:
+	languageName: string;
 	selectorsOfCompatibleParsers: ParserSelector[];
+
 	executeSemanticAction(semanticStack: SemanticStackType, action: string): void;
 	tokenToSymbol(token: IToken): GrammarSymbol;
 	pushTokenOntoSemanticStack(
