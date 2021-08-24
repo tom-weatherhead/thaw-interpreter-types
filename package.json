@@ -55,7 +55,7 @@
 		"// test": "jest",
 		"deploy": "eval mv $npm_package_name-$npm_package_version.tgz $(echo $npm_package_config_deploy_target_dir)/",
 		"// prepare": "npm run build",
-		"prepublishOnly": "npm test && npm run lint",
+		"// prepublishOnly": "npm test && npm run lint",
 		"preversion": "npm run lint",
 		"version": "npm run prettier-format && git add -A src",
 		"postversion": "git push && git push --tags",
