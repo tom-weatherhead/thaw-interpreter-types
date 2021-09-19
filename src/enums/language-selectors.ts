@@ -16,5 +16,6 @@ export enum LanguageSelector {
 	JSON,
 	EcstaSKI, // Evaluation via graph reduction using S, K, I combinators.
 	Adso,
-	LambdaCalculus
+	LambdaCalculus,
+	LambdaCalculusIntegerExtension
 }

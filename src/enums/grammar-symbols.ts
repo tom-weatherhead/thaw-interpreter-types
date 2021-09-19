@@ -1,6 +1,6 @@
 // tom-weatherhead/thaw-interpreter-types/src/enums/grammar-symbols.ts
 
-// TODO: Rename Symbol as something like GrammarSymbol,
+// Renamed Symbol to GrammarSymbol,
 // since Symbol is already defined by JavaScript or Node.js
 // (e.g. Symbol.iterator)
 
@@ -126,7 +126,7 @@ export enum GrammarSymbol {
 	nonterminalValue,
 	nonterminalBracketedExpression,
 	nonterminalExpressionList,
-	nonterminalOptr,
+	nonterminalOptr, // Operator
 	nonterminalValueOp,
 	nonterminalQuotedConst,
 	nonterminalSExpression,

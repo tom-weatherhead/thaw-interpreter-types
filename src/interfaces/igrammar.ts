@@ -19,7 +19,7 @@ export interface IGrammar {
 	startSymbol: GrammarSymbol;
 	productions: IProduction[];
 
-	// 'Get' accessor:
+	// 'Get' accessors:
 	languageName: string;
 	selectorsOfCompatibleParsers: ParserSelector[];
 
