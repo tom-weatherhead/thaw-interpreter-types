@@ -52,7 +52,7 @@ export enum LexicalState {
 	tokenMinusMinusGreaterThan,
 	tokenEqualDotDot,
 	tokenCaret,
-	tokenGreekLetterLambda,
+	tokenLowercaseGreekLetterLambda,
 	tokenEOF,
 
 	// Non-accept (intermediate) states

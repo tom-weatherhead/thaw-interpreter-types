@@ -93,6 +93,17 @@ export enum GrammarSymbol {
 	terminalFn,
 	terminalThickArrow,
 
+	// Terminals for the augmented Lambda calculus
+	terminalIn,
+	terminalTrue,
+	terminalFalse,
+	terminalComb,
+	terminalInc,
+	terminalDec,
+	terminalAnd,
+	terminalOr,
+	terminalIsZero,
+
 	// terminal,
 
 	terminalEOF,
