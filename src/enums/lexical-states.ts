@@ -28,6 +28,7 @@ export enum LexicalState {
 	tokenRightBracket,
 	tokenAssign,
 	tokenArrow,
+	tokenThickArrow,
 	tokenExclamation,
 	tokenApostrophe,
 	tokenOctothorpe,

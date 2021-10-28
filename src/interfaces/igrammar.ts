@@ -8,6 +8,8 @@ import { IProduction } from './iproduction';
 
 import { GrammarSymbol } from '../enums/grammar-symbols';
 
+import { LexicalAnalyzerSelector } from '../enums/lexical-analyzer-selectors';
+
 import { ParserSelector } from '../enums/parser-selectors';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -21,6 +23,8 @@ export interface IGrammar {
 
 	// 'Get' accessors:
 	languageName: string;
+	defaultLexicalAnalyzer: LexicalAnalyzerSelector;
+	defaultParser: ParserSelector;
 	selectorsOfCompatibleParsers: ParserSelector[];
 
 	executeSemanticAction(semanticStack: SemanticStackType, action: string): void;

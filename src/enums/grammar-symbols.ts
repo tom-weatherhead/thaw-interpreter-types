@@ -103,6 +103,25 @@ export enum GrammarSymbol {
 	terminalAnd,
 	terminalOr,
 	terminalIsZero,
+	terminalNil,
+
+	// Smalltalk terminals
+	// terminal,
+	terminalOctothorpe,
+	terminalDollar,
+	terminalClass,
+	terminalObjectPred,
+	terminalStrlen,
+	terminalSubstr,
+	terminalTypename,
+	terminalStrcat,
+	terminalNewArray,
+	terminalArrayLength,
+	terminalArrayGet,
+	terminalArraySet,
+	terminalArrayPred,
+	terminalCharPred,
+	terminalStringIndex,
 
 	// terminal,
 
@@ -176,5 +195,14 @@ export enum GrammarSymbol {
 	nonterminalLambdaExpression,
 	nonterminalLetStatement,
 
-	nonterminalFunctionCall
+	nonterminalFunctionCall,
+	nonterminalAfterVariable,
+
+	// Smalltalk non-terminals
+	nonterminalClassDef,
+	nonterminalClass,
+	nonterminalInstVars,
+	nonterminalMethodDef,
+	nonterminalMethodDefList,
+	nonterminalLiteralList
 }
