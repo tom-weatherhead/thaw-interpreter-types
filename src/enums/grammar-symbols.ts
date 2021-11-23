@@ -106,7 +106,6 @@ export enum GrammarSymbol {
 	terminalNil,
 
 	// Smalltalk terminals
-	// terminal,
 	terminalOctothorpe,
 	terminalDollar,
 	terminalClass,
@@ -122,6 +121,31 @@ export enum GrammarSymbol {
 	terminalArrayPred,
 	terminalCharPred,
 	terminalStringIndex,
+
+	// APL terminals
+	terminalVectorConst,
+	terminalMax,
+	terminalPlusSlash,
+	terminalMinusSlash,
+	terminalMultiplySlash,
+	terminalDivideSlash,
+	terminalMaxSlash,
+	terminalOrSlash,
+	terminalAndSlash,
+	terminalCompress,
+	terminalShape,
+	terminalRavel,
+	terminalRestruct,
+	terminalCat,
+	terminalIndx,
+	terminalTrans,
+	terminalSquareBrackets,
+	terminalDoubleSubscripting,
+
+	// CLU terminals
+	terminalCluster,
+	terminalRep,
+	terminalExport,
 
 	// terminal,
 
@@ -204,5 +228,19 @@ export enum GrammarSymbol {
 	nonterminalInstVars,
 	nonterminalMethodDef,
 	nonterminalMethodDefList,
-	nonterminalLiteralList
+	nonterminalLiteralList,
+
+	// APL non-terminals
+	nonterminalVectorConst,
+	nonterminalIntegerLiteralList,
+
+	// CLU non-terminals
+	nonterminalClusterDef,
+	nonterminalRep,
+	nonterminalFunDefList,
+	nonterminalOnePartName,
+	// nonterminalTwoPartName,
+	nonterminalOnePartNameTail,
+	nonterminalExportList,
+	nonterminalOnePartNameList
 }
