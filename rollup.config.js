@@ -19,9 +19,7 @@ export default {
 			// Create a CommonJS version for Node.js
 			file: 'dist/thaw-interpreter-types.cjs.js',
 			format: 'cjs',
-			exports: 'named' // ,
-			// globals: { uuid: 'uuid' }
-			// plugins: [nodeResolve()]
+			exports: 'named'
 		},
 		{
 			// Create an ESModule version
@@ -29,7 +27,6 @@ export default {
 			format: 'es',
 			esModule: true,
 			compact: true,
-			// globals: { uuid: 'uuid' },
 			plugins: [terser()]
 		},
 		{
@@ -38,7 +35,6 @@ export default {
 			name: 'thaw-interpreter-types',
 			format: 'umd',
 			compact: true,
-			// globals: { uuid: 'uuid' },
 			plugins: [terser()]
 		}
 	],
