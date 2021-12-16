@@ -84,10 +84,22 @@ export enum GrammarSymbol {
 	// Prolog terminals
 	terminalNameBeginningWithCapital,
 	terminalNameNotBeginningWithCapital,
-	terminalFrom,
-	terminalInferPred,
-	terminalNotSymbol,
-	terminalIs,
+	terminalFrom, // ':-'
+	terminalInferPred, // '?-'
+	terminalNotSymbol, // '\\+'
+	terminalIs, // 'is'
+	terminalLessOrEqual, // '=<'
+	terminalGreaterOrEqual, // '>='
+	terminalNotEqual, // '\\==' (equals is '==')
+	terminalArithmeticEqual, // '=:='
+	terminalArithmeticNotEqual, // '=\\='
+	terminalUnifiable, // '='
+	terminalNotUnifiable, // '\\='
+	terminalIfThen, // '->'
+	terminalColon, // ':'
+	terminalDCGArrow, // '-->'
+	terminalUniv, // '=..'
+	terminalCaret, // '^'
 
 	// EcstaSKI terminals
 	terminalFn,
@@ -199,21 +211,23 @@ export enum GrammarSymbol {
 	nonterminalClause,
 	nonterminalQuery,
 	nonterminalGoal,
-	// nonterminalLHSGoal,
 	nonterminalClauseTail,
-	// nonterminalLHSGoalTail,
-	// nonterminalFunctor,
-	// nonterminalFunctorParameters,
-	// nonterminalGoalWithPossibleDisjunctiveTail,
 	nonterminalGoalList,
 	nonterminalGoalListTail,
-	// nonterminalPossibleDisjunctiveTail,
 	nonterminalList,
 	nonterminalListContents,
 	nonterminalListContentsTail,
 	nonterminalFunctorExpression,
 	nonterminalTailOfGoalOrFunctorExpression,
 	nonterminalExpressionListTail,
+	nonterminalGoalTail1,
+	nonterminalVariableOrNumericLiteral,
+	// nonterminalLHSGoal,
+	// nonterminalLHSGoalTail,
+	// nonterminalFunctor,
+	// nonterminalFunctorParameters,
+	// nonterminalGoalWithPossibleDisjunctiveTail,
+	// nonterminalPossibleDisjunctiveTail,
 
 	// EcstaSKI non-terminals
 	nonterminalLambdaExpression,
@@ -242,5 +256,18 @@ export enum GrammarSymbol {
 	// nonterminalTwoPartName,
 	nonterminalOnePartNameTail,
 	nonterminalExportList,
-	nonterminalOnePartNameList
+	nonterminalOnePartNameList,
+
+	// Arithmetic
+	nonterminalArithmeticExpression,
+	nonterminalArithmeticExpression1,
+	nonterminalArithmeticExpression2,
+	nonterminalArithmeticExpression3,
+	nonterminalArithmeticExpression4,
+	nonterminalArithmeticOperator,
+	nonterminalArithmeticOperator1,
+	nonterminalArithmeticOperator2,
+	nonterminalArithmeticOperator3,
+	nonterminalArithmeticOperator4,
+	nonterminalArithmeticComparisonOperator
 }

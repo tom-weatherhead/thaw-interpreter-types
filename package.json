@@ -1,6 +1,6 @@
 {
 	"name": "thaw-interpreter-types",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "thaw-interpreter-types",
 	"keywords": [
 		"APL",
@@ -8,7 +8,7 @@
 		"CLU",
 		"context-free grammar",
 		"grammar",
-		"Lambda calculus",
+		"lambda-calculus",
 		"LISP",
 		"programming languages",
 		"Prolog",

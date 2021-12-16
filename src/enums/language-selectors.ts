@@ -22,5 +22,6 @@ export enum LanguageSelector {
 	LambdaCalculusWithAugmentedSyntax,
 	LambdaCalculusIntegerExtension,
 	C,
-	N1
+	N1,
+	Arithmetic
 }
