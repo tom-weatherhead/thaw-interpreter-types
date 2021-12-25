@@ -1,6 +1,6 @@
 {
 	"name": "thaw-interpreter-types",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "TypeScript type information for thaw's interpreter code",
 	"keywords": [
 		"APL",

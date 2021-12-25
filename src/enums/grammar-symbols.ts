@@ -103,7 +103,7 @@ export enum GrammarSymbol {
 
 	// EcstaSKI terminals
 	terminalFn,
-	terminalThickArrow,
+	terminalThickArrow, // '=>'
 
 	// Terminals for the augmented Lambda calculus
 	terminalIn,
@@ -158,6 +158,19 @@ export enum GrammarSymbol {
 	terminalCluster,
 	terminalRep,
 	terminalExport,
+
+	// Fxx terminals
+	terminalThen,
+	terminalElse,
+	terminalCall,
+
+	// Protos
+	terminalTypeBoolean,
+	terminalTypeByte,
+	terminalTypeClosure,
+	terminalTypeInteger,
+	terminalTypeFloatingPoint,
+	terminalTypeString,
 
 	// terminal,
 
@@ -269,5 +282,15 @@ export enum GrammarSymbol {
 	nonterminalArithmeticOperator2,
 	nonterminalArithmeticOperator3,
 	nonterminalArithmeticOperator4,
-	nonterminalArithmeticComparisonOperator
+	nonterminalArithmeticComparisonOperator,
+
+	// Protos
+	nonterminalActualParameterList,
+	nonterminalFormalParameterList,
+	nonterminalCommaSeparatedVariableList,
+	nonterminalCommaSeparatedExpressionList,
+	nonterminalTypeName,
+	nonterminalTypeExpression,
+	nonterminalTypeParameterized,
+	nonterminalOptionalElseBlock
 }

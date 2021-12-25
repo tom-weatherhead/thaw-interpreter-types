@@ -2,6 +2,7 @@
 
 export enum LanguageSelector {
 	MinimalLanguage,
+
 	// BEGIN : Languages from Kamin's book
 	Micro,
 	Chapter1,
@@ -13,6 +14,7 @@ export enum LanguageSelector {
 	Smalltalk,
 	Prolog, // Kamin's Prolog syntax, from his book.
 	// END : Languages from Kamin's book
+
 	Prolog2, // Real Prolog syntax.
 	Inference,
 	JSON,
@@ -23,5 +25,7 @@ export enum LanguageSelector {
 	LambdaCalculusIntegerExtension,
 	C,
 	N1,
-	Arithmetic
+	Arithmetic,
+	Fxx,
+	Protos
 }
