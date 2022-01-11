@@ -330,5 +330,6 @@ export enum GrammarSymbol {
 	nonterminalTypeParameterized,
 	nonterminalOptionalElseBlock,
 	nonterminalNonEmptyExpressionList,
-	nonterminalLValue // A 'left value'; i.e. an expression to which a value can be assigned; e.g. the expression on the left-hand side of an assignment operator
+	nonterminalLValue, // A 'left value'; i.e. an expression to which a value can be assigned; e.g. the expression on the left-hand side of an assignment operator
+	nonterminalAssignmentOperator
 }
