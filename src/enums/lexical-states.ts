@@ -10,10 +10,10 @@ export enum LexicalState {
 	tokenBoolIdent,
 	tokenSkolemIdent,
 	tokenVariable,
-	tokenMult,
-	tokenDiv,
 	tokenPlus,
 	tokenMinus,
+	tokenMult,
+	tokenDiv,
 	tokenEqual,
 	tokenNotEqual,
 	tokenLess,
@@ -54,6 +54,15 @@ export enum LexicalState {
 	tokenEqualDotDot,
 	tokenCaret,
 	tokenLowercaseGreekLetterLambda,
+
+	// Protos
+	tokenPercent,
+	tokenPlusEqual,
+	tokenMinusEqual,
+	tokenMultEqual,
+	tokenDivEqual,
+	tokenPercentEqual,
+
 	tokenEOF,
 
 	// Non-accept (intermediate) states
