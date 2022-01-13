@@ -184,6 +184,8 @@ export enum GrammarSymbol {
 	terminalModulusEqual,
 	terminalLeftCurlyBrace,
 	terminalRightCurlyBrace,
+	terminalDo,
+	terminalForEach,
 
 	// terminal,
 
