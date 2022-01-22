@@ -24,22 +24,23 @@ export enum LexicalState {
 	tokenComma,
 	token2OrBar,
 	token2Ampersand,
-	tokenLeftBracket,
-	tokenRightBracket,
-	tokenAssign,
-	tokenArrow,
-	tokenThickArrow,
+	tokenLeftBracket, // (
+	tokenRightBracket, // )
+	tokenAssign, // Usually :=
+	tokenArrow, // ->
+	tokenThickArrow, // =>
 	tokenExclamation,
 	tokenApostrophe,
-	tokenOctothorpe,
+	tokenOctothorpe, // #
 	tokenDollar,
 	tokenDot,
-	tokenLeftSquareBracket,
-	tokenRightSquareBracket,
-	tokenOrBar,
+	tokenLeftSquareBracket, // [
+	tokenRightSquareBracket, // ]
+	tokenOrBar, // |
+	tokenAmpersand, // &
 	tokenColon,
-	tokenLeftCurlyBrace,
-	tokenRightCurlyBrace,
+	tokenLeftCurlyBrace, // {
+	tokenRightCurlyBrace, // }
 	tokenQuoteKeyword,
 	tokenQuestionMinus,
 	tokenColonMinus,
@@ -52,8 +53,9 @@ export enum LexicalState {
 	tokenEqualBackslashEqual,
 	tokenMinusMinusGreaterThan,
 	tokenEqualDotDot,
-	tokenCaret,
-	tokenLowercaseGreekLetterLambda,
+	tokenCaret, // ^
+	tokenTilde, // ~
+	tokenLowercaseGreekLetterLambda, // λ
 
 	// Protos
 	tokenPercent,
@@ -62,6 +64,22 @@ export enum LexicalState {
 	tokenMultEqual,
 	tokenDivEqual,
 	tokenPercentEqual,
+	tokenForAll, // ∀
+	tokenThereExists, // ∃
+	tokenThereDoesNotExist, // ∄
+	tokenEmptySet, // ∅
+	tokenIsAnElementOf, // U+2208	∈	Is an element of (i.e. is a member of) (large)
+	tokenIntersection, // ∩
+	tokenUnion, // ∪
+	tokenIsASubsetOf, // U+2286	⊆	Subset of or equal to
+	tokenIsAProperSubsetOf,
+	tokenBitwiseShiftLeft,
+	tokenBitwiseShiftRight,
+	tokenBitwiseAndEqual,
+	tokenBitwiseOrEqual,
+	tokenBitwiseXorEqual,
+	tokenBitwiseShiftLeftEqual,
+	tokenBitwiseShiftRightEqual,
 
 	tokenEOF,
 

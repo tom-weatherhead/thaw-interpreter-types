@@ -177,15 +177,31 @@ export enum GrammarSymbol {
 	terminalMapGet,
 	terminalMapSet,
 	terminalAsync,
-	terminalPlusEqual,
-	terminalMinusEqual,
-	terminalMultiplyEqual,
-	terminalDivideEqual,
-	terminalModulusEqual,
-	terminalLeftCurlyBrace,
-	terminalRightCurlyBrace,
+	terminalPlusEqual, // +=
+	terminalMinusEqual, // -=
+	terminalMultiplyEqual, // *=
+	terminalDivideEqual, // /=
+	terminalModulusEqual, // %=
+	terminalLeftCurlyBrace, // {
+	terminalRightCurlyBrace, // }
 	terminalDo,
 	terminalForEach,
+	terminalDeclare,
+	terminalBooleanPred,
+	terminalMapPred,
+	terminalPairPred,
+	terminalLogicalNot, // !
+	terminalBitwiseAnd, // &
+	terminalBitwiseOr, // |
+	terminalBitwiseXor, // ^
+	terminalBitwiseNot, // ~
+	terminalBitwiseShiftLeft, // <<
+	terminalBitwiseShiftRight, // >>
+	terminalBitwiseAndEqual, // &=
+	terminalBitwiseOrEqual, // |=
+	terminalBitwiseXorEqual, // ^=
+	terminalBitwiseShiftLeftEqual, // <<=
+	terminalBitwiseShiftRightEqual, // >>=
 
 	// terminal,
 
@@ -333,5 +349,9 @@ export enum GrammarSymbol {
 	nonterminalOptionalElseBlock,
 	nonterminalNonEmptyExpressionList,
 	nonterminalLValue, // A 'left value'; i.e. an expression to which a value can be assigned; e.g. the expression on the left-hand side of an assignment operator
-	nonterminalAssignmentOperator
+	nonterminalAssignmentOperator,
+	nonterminalBlock,
+	nonterminalDeclarationPartOfBlock,
+	nonterminalDeclaration,
+	nonterminalDeclarationList
 }
