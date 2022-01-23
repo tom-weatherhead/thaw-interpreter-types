@@ -202,6 +202,9 @@ export enum GrammarSymbol {
 	terminalBitwiseXorEqual, // ^=
 	terminalBitwiseShiftLeftEqual, // <<=
 	terminalBitwiseShiftRightEqual, // >>=
+	terminalIncrement, // ++
+	terminalDecrement, // --
+	terminalQuestionMark, // ?
 
 	// terminal,
 

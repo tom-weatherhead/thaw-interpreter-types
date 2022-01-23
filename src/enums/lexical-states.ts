@@ -80,6 +80,9 @@ export enum LexicalState {
 	tokenBitwiseXorEqual,
 	tokenBitwiseShiftLeftEqual,
 	tokenBitwiseShiftRightEqual,
+	tokenPlusPlus,
+	tokenMinusMinus,
+	tokenQuestionMark,
 
 	tokenEOF,
 
