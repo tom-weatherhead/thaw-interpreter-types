@@ -205,6 +205,7 @@ export enum GrammarSymbol {
 	terminalIncrement, // ++
 	terminalDecrement, // --
 	terminalQuestionMark, // ?
+	terminalColonColon, // ::
 
 	// terminal,
 
@@ -356,5 +357,7 @@ export enum GrammarSymbol {
 	nonterminalBlock,
 	nonterminalDeclarationPartOfBlock,
 	nonterminalDeclaration,
-	nonterminalDeclarationList
+	nonterminalDeclarationList,
+	nonterminalValueList,
+	nonterminalValueListTail
 }

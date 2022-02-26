@@ -38,7 +38,7 @@ export enum LexicalState {
 	tokenRightSquareBracket, // ]
 	tokenOrBar, // |
 	tokenAmpersand, // &
-	tokenColon,
+	tokenColon, // :
 	tokenLeftCurlyBrace, // {
 	tokenRightCurlyBrace, // }
 	tokenQuoteKeyword,
@@ -83,6 +83,7 @@ export enum LexicalState {
 	tokenPlusPlus,
 	tokenMinusMinus,
 	tokenQuestionMark,
+	tokenColonColon, // ::
 
 	tokenEOF,
 
